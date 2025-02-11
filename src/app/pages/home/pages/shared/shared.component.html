@@ -1,0 +1,7 @@
+<h2>Formularios</h2>
+
+<app-button (click) = "onPatchValue()">Agregar texto</app-button>
+
+<form [formGroup]="form" novalidate autocomplete="off" (ngSubmit) = "onSubmit()">
+  <app-input formControlName="input"></app-input>
+</form>
